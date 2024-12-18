@@ -1,0 +1,13 @@
+version: '3.8'
+
+service:
+  mainapp:
+    build:
+      context: .
+    container_name: todoapp
+    networks:
+      - todonet
+    ports: 5173:5173
+networks:
+  todonet:
+    driver: bridge
