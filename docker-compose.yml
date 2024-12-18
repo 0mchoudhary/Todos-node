@@ -7,7 +7,9 @@ services:
     container_name: todoapp
     networks:
       - todonet
-    ports: 5173:5173
+    ports:
+      - "5173:5173"  
+
 networks:
   todonet:
     driver: bridge
